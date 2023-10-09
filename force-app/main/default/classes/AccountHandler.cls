@@ -2,9 +2,9 @@ public class AccountHandler {
 
     public static Account insertNewAccount(String AccountName){
         try{
-            Account newacct=new Account(Name=AccountName);
-            insert newacct;
-            return newacct;
+            Account newaccount=new Account(Name=AccountName);
+            insert newaccount;
+            return newaccount;
         }catch (DmlException e){
             System.debug('A DML exception has occurred :' +e.getMessage());
             return null;
