@@ -7,6 +7,7 @@ public class AccountHandler {
             return newaccount;
         }catch (DmlException e){
             System.debug('A DML exception has occurred :' +e.getMessage());
+            system.debug('error');
             return null;
         }
     }
